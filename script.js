@@ -17,10 +17,20 @@
 // Recorrido --> se utiliza para buscar informacion
 //linado --> 
 
-let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for (let index = 0 ; index < numeros.length; index++) {
-    //console.log(numeros[index])
-    if(index % 2 === 0) { // se utilisa para saver si un numero es par
-        console.log(numeros[index] * 4)
-    }
+// let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// for (let index = 0 ; index < numeros.length; index++) {
+//     //console.log(numeros[index])
+//     if(index % 2 === 0) { // se utilisa para saver si un numero es par
+//         console.log(numeros[index] * 4)
+//     }
+// }
+
+// introducir informacion en un arreglo
+let nombres = [] // introducir informacion en un arreglo
+for (let index = 0; index < 5; index++) {
+    nombres[index] = prompt('ingresa su nombre')
+}
+for (let index = 0; index < nombres.length; index++) { // se utiliza length para leer el arreglo
+    console.log(nombres[index] + " " + "bien echo")
+    
 }
